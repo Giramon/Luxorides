@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Аренда премиальных автомобилей_Ваньков_Андрей_П-23</title>
+</head>
+<body>
+    <!--Шапка сайта-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Логотип">
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" id="toggle_btn"></i>
+                </div>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li class="menu-items"><a href="#">Главная</a></li>
+                        <li class="menu-items"><a href="#cars">Автомобили</a></li>
+                        <li class="menu-items"><a href="#price">Бронирование авто</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#cars">Автомобили</a></li>
+                    <li class="menu-item"><a href="#price">Бронирование авто</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            togglebtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <!--Первая секция-->
+    <section class="main">
+        <div class="container">
+            <div class="main-info">
+                <h1 class="main-title">Аренда премиальных автомобилей</h1>
+                <div class="main-text">
+                    В&nbsp;нашем клубе имеется солидная коллекция спортивных автомобилей&nbsp;&mdash; от&nbsp;достаточно распространенных серийных машин до&nbsp;настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за&nbsp;рулем настоящей легенды и&nbsp;узнать, на&nbsp;что она способна за&nbsp;пределами гоночной трассы!
+                </div>
+                <div class="main-action">
+                    <button class="button" id="main-action">Посмотреть автомобили</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Вторая секция-->
+    <section class="car" id="cars">
+        <div class="container">
+            <h2 class="sub-title">Наш автопарк</h2>
+            <!--Блок карточек общий-->
+            <div class="car-items">
+
+                <!--первая карточка-->
+                <div class="car-item">
+                    <div class="car-item-image">
+                        <img src="images/1.png" alt="images 1">
+                    </div>
+                    <div class="car-item-title">Lamborghini Huracan Spyder</div>
+                    <div class="car-item-info">
+                        <div class="flex">
+                            <img src="images/gear.svg" alt="">
+                            <p><b>Привод</b></p>
+                            <p>полный</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/wheel.svg" alt="">
+                            <p><b>Двигатель</b></p>
+                            <p>5.2 л.с.</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/belt.svg" alt="">
+                            <p><b>Кол-во мест</b></p>
+                            <p>2</p>
+                        </div>
+                    </div>
+
+                    <!--Кнопка в карточке-->
+                    <div class="car-item-action">
+                        <button class="button car-button">Забронировать</button>
+                    </div>
+                </div>
+                <!--вторая карточка-->
+                <div class="car-item">
+                    <div class="car-item-image">
+                        <img src="images/2.png" alt="images 2">
+                    </div>
+                    <div class="car-item-title">Chevrolet Corvette</div>
+                    <div class="car-item-info">
+                        <div class="flex">
+                            <img src="images/gear.svg" alt="">
+                            <p><b>Привод</b></p>
+                            <p>полный</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/wheel.svg" alt="">
+                            <p><b>Двигатель</b></p>
+                            <p>6.2 л.с.</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/belt.svg" alt="">
+                            <p><b>Кол-во мест</b></p>
+                            <p>2</p>
+                        </div>
+                    </div>
+
+                    <!--Кнопка в карточке-->
+                    <div class="car-item-action">
+                        <button class="button car-button">Забронировать</button>
+                    </div>
+                </div>
+                <!--третья карточка-->
+                <div class="car-item">
+                    <div class="car-item-image">
+                        <img src="images/3.png" alt="images 3">
+                    </div>
+                    <div class="car-item-title">Ferrari California</div>
+                    <div class="car-item-info">
+                        <div class="flex">
+                            <img src="images/gear.svg" alt="">
+                            <p><b>Привод</b></p>
+                            <p>полный</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/wheel.svg" alt="">
+                            <p><b>Двигатель</b></p>
+                            <p>3.9 л.с.</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/belt.svg" alt="">
+                            <p><b>Кол-во мест</b></p>
+                            <p>4</p>
+                        </div>
+                    </div>
+
+                    <!--Кнопка в карточке-->
+                    <div class="car-item-action">
+                        <button class="button car-button">Забронировать</button>
+                    </div>
+                </div>
+                <!--четвертая карточка-->
+                <div class="car-item">
+                    <div class="car-item-image">
+                        <img src="images/4.png" alt="images 4">
+                    </div>
+                    <div class="car-item-title">Lamborghini Urus</div>
+                    <div class="car-item-info">
+                        <div class="flex">
+                            <img src="images/gear.svg" alt="">
+                            <p><b>Привод</b></p>
+                            <p>полный</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/wheel.svg" alt="">
+                            <p><b>Двигатель</b></p>
+                            <p>4 л.с.</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/belt.svg" alt="">
+                            <p><b>Кол-во мест</b></p>
+                            <p>5</p>
+                        </div>
+                    </div>
+
+                    <!--Кнопка в карточке-->
+                    <div class="car-item-action">
+                        <button class="button car-button">Забронировать</button>
+                    </div>
+                </div>
+                <!--пятая карточка-->
+                <div class="car-item">
+                    <div class="car-item-image">
+                        <img src="images/5.png" alt="images 5">
+                    </div>
+                    <div class="car-item-title">Audi R8</div>
+                    <div class="car-item-info">
+                        <div class="flex">
+                            <img src="images/gear.svg" alt="">
+                            <p><b>Привод</b></p>
+                            <p>полный</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/wheel.svg" alt="">
+                            <p><b>Двигатель</b></p>
+                            <p>5.2 л.с.</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/belt.svg" alt="">
+                            <p><b>Кол-во мест</b></p>
+                            <p>2</p>
+                        </div>
+                    </div>
+
+                    <!--Кнопка в карточке-->
+                    <div class="car-item-action">
+                        <button class="button car-button">Забронировать</button>
+                    </div>
+                </div>
+                <!--шестая карточка-->
+                <div class="car-item">
+                    <div class="car-item-image">
+                        <img src="images/6.png" alt="images 6">
+                    </div>
+                    <div class="car-item-title">Chevrolet Camaro</div>
+                    <div class="car-item-info">
+                        <div class="flex">
+                            <img src="images/gear.svg" alt="">
+                            <p><b>Привод</b></p>
+                            <p>полный</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/wheel.svg" alt="">
+                            <p><b>Двигатель</b></p>
+                            <p>2 л.с.</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/belt.svg" alt="">
+                            <p><b>Кол-во мест</b></p>
+                            <p>4</p>
+                        </div>
+                    </div>
+
+                    <!--Кнопка в карточке-->
+                    <div class="car-item-action">
+                        <button class="button car-button">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Третья секция-->
+    <section class="price" id="price">
+        <div class="container">
+            <h2 class="sub-title">Узнать цену и забронировать</h2>
+            <div class="price-text">
+                Заполните данные, и&nbsp;мы&nbsp;перезвоним вам для уточнения всех деталей бронирования
+            </div>
+            <form action="" class="price-form">
+                <input type="text" class="price-input" id="name" placeholder="Ваше имя">
+                <input type="number" class="price-input" id="phone" placeholder="Ваш телефон">
+                <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует">
+                <button class="button" type="button" id="price-action">Узнать цену</button>
+            </form>
+            <img src="images/rolls.png" alt="rolls" class="price-image">
+        </div>
+    </section>
+
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="rights">Все права защищены</div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scriptscroll.js"></script>
+    <script src="scripts/script1.js"></script>
+</body>
+</html>
